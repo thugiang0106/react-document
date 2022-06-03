@@ -36,3 +36,14 @@
 
 ---
 
+## Relationship between REACT and components
+
+– REACT is made of Components and it's all about components
+
+![react and components](img/components.png)
+
+- level 1: Data 
+- level 2: Main Components
+- level 3: child Components of main components
+
+- React passes Data down the tree to its' children. If you update main Data, **data will be automatically passes and updates through the tree and changes its children**

@@ -55,7 +55,9 @@ import React from "react";
 
 function Avenger() {
     return(
+        <> // a fragment
         <p>Iron Man</p>
+        </>
     ) //normal JS function
 }
 ```

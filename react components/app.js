@@ -30,3 +30,15 @@ ReactDOM
   // React component (JSX),
   //render into this DOM element (vanilla JS). makes it 
   );
+
+  //REACT components
+import React from "react"; //import js file to this file
+
+function Avenger() {
+    return (
+        <> // a fragment
+            <div> ...</div>
+            <div>O.O</div>
+        </>
+    )
+}

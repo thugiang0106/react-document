@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React - Let's start!
+          Learn React - Let's start! Ok me just try da local asus laptop. Please accept me branch master Thu
         </a>
       </header>
     </div>

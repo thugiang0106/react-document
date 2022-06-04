@@ -15,7 +15,7 @@
 
 ## How REACT works?
 
-** – React replaces all DOM/ jQuery elements: replace add event listeners and query selectors**
+**– React replaces all DOM/ jQuery elements: replace add event listeners and query selectors**
 
 – React renders your components to the page
 
@@ -43,7 +43,9 @@
 ![react and components](img/components.png)
 
 - level 1: Data 
+
 - level 2: Main Components
+
 - level 3: child Components of main components
 
 - React passes Data down the tree to its' children. If you update main Data, **data will be automatically passes and updates through the tree and changes its children**
@@ -53,11 +55,16 @@
 
 ## Why REACT?
 
-– It's the second popular framework/ library just behind Jquery
+– It's the second popular library just behind Jquery
+
 – Component composition. You can put components inside a components, reusable components
+
 – Declarative UI. 
+
 – It's mainly **Just JavaScript**. Still uses JavaScript logic 
+
 – It is the right abstraction.It takes care of complex code behind the scene and makes it
+
 – Popularity means there are a ton of tools and resources for REACT
 
 ---

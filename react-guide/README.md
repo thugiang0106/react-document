@@ -37,4 +37,4 @@ ReactDom.render(
 
 - Stands for property: enable us to reuse same code in a different functions
 
-![props](./img/reactposition.png)
+![props](./img/props.png)

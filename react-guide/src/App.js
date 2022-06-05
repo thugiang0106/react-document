@@ -1,14 +1,16 @@
+import "./App.css";
 
-import './App.css';
-
-function App() {
+function App(props) {
   return (
-    
     <div className="App intro">
-      <h1>Hello world</h1>
-      <p>I am a component</p>
+      <h1>{props.title}</h1> 
+      <p>{props.description}</p>
     </div>
   );
 }
 
-export default App;
+function MyComponent() {
+  return <App title="Hello World" description="I am a component" />;
+}
+
+export default MyComponent;

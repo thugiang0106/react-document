@@ -38,3 +38,72 @@ ReactDom.render(
 - Stands for property: enable us to reuse same code in a different functions
 
 ![props](../img/props.png)
+
+- Attribute's name will automatically pass into function App
+
+### Components using props
+
+- {props}
+
+![props](../img/propsparameters.png)
+
+### Destructuring props
+
+- we can omit props. and keep the attribute. ie: {props.type} -> {type}
+
+## Children
+
+- You can nest normal HTML elements inside a custom components
+- We can reuse components
+
+```
+const Post = ({ title, children }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      {children} {/*children inside Post component */}
+    </div>
+  ); 
+};
+
+function App() {
+  return (
+      <Post title="My blog post 1" text="blah blah blah">
+        <p>This is Amazing</p>
+        <p>Im putting a children inside a custom components</p>
+      </Post>
+  );
+}
+
+```
+
+---
+
+# JavaScript Modules
+
+– Isolated pieces of code, in one file
+
+– They expose an interface so other modules can interact with them
+
+– They can be re-used
+
+– They can be shared
+
+– Imagine JavaScript components like a watch
+
+![props](../img/componentofwatch.png)
+
+```
+// imports
+
+import anotherModule from 'anotherModule' ;
+
+const myModule = () => {
+  anotherModule('Calling someone elses module');
+}
+
+// exports
+
+export default myModule;
+
+```

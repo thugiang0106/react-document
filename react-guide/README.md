@@ -1,3 +1,7 @@
+# React component 
+
+- A piece block of code which is reusable bits of code
+
 # REACT properties and children
 
 - Parts of React appilcation
@@ -45,7 +49,7 @@ ReactDom.render(
 
 - {props}
 
-![props](../img/propsparameters.png)
+![props](../img/propsparamaters.png)
 
 ### Destructuring props
 
@@ -79,6 +83,7 @@ function App() {
 
 ---
 
+
 # JavaScript Modules
 
 – Isolated pieces of code, in one file
@@ -106,4 +111,68 @@ const myModule = () => {
 
 export default myModule;
 
+```
+
+--- 
+
+## Callbacks function
+
+– Is a function that calls by another function
+
+– Imagine it's like an answering machine
+
+
+
+
+![answering machine](../img/answering.png)
+
+```
+const phoneMark = (callback) => {
+  //Mark maybe is unavailable for now (false), but will be available within 30 minutes
+  const returningCall = true;
+  if(returningCall) {
+    callback();
+  }
+};
+
+const phoneMe = () => {
+  const myNumber = "022 3456 32432";
+  makePhoneCall(myNumber);
+}
+
+phoneMark(phoneMe); //when Mark is available, call phoneMe function. Callback function is used when Mark is ready
+```
+
+### Why use callbacks?
+
+– We want a function to be in control of when another function is called
+– " Run my function, when you have finished doing your thing "
+
+![callback function](../img/callback\function.png)
+
+
+## Event Handler 
+
+### How Event Handler works on DOM?
+```
+const btnEl = document.querySelector("#myBtn");
+const log = () => {
+  console.log("clicked);
+}
+
+btnEl.addEventListener('clicked', log)
+```
+
+### How Event Handler works on React?
+
+```
+const MyComponent = () => {
+  const onClick = () => {
+    alert("Clicked!")
+  };
+
+  return(
+    <button onClick = {onClick}>Buy Me</button>
+  ) //when someone clickes button, we run button
+}
 ```

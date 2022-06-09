@@ -2,7 +2,6 @@ import React from "react"; //MUST have
 
 //({title, text}): destructuring of props
 const Post = (props) => {
-  console.log(props)
   return (
     <li>
       <h1>{props.title}</h1>
